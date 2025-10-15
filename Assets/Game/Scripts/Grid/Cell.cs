@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Represents a single cell on the grid.
+/// Currently holds its position and occupancy status.
+/// </summary>
 public class Cell : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Vector2Int gridPosition; // Position in the grid
+    public bool isOccupied = false; // Whether this cell currently has an item
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // The item currently placed on this cell (if any)
+    public GameObject currentItem; // Items will be added
 }
